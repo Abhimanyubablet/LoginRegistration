@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:layout_marginTop="20dp"
+           android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            android:backgroundTint="@color/lightSky"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/student_framelaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/student_navigation_view"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/student_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/buttom_menu"
+        />
+
+
+
+
+</RelativeLayout>
